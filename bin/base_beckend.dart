@@ -1,3 +1,6 @@
+import 'package:shelf/shelf.dart';
+import 'package:shelf/shelf_io.dart';
+
 void main(List<String> arguments) {
-  print('Hello world');
+  serve((request) => Response(200, body: 'Ola mundo'), 'localhost', 8080);
 }
